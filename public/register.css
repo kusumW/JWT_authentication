@@ -1,0 +1,63 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  a {
+    color: #00B7FF;
+  }
+  .wrapper {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    
+  }
+  .form-signin {
+    max-width: 420px;
+    padding: 30px 38px 66px;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 3px dotted rgba(0,0,0,0.1);
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 1);
+  }
+  .form-signin-heading {
+    text-align:center;
+    margin-bottom: 30px;
+  }
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+  }
+  input[type=text], input[type=password],input[type=email] ,input[type=number],textarea {  
+    width: 100%;  
+    padding: 10px;  
+    margin: 1px 0 10px 0;  
+    display: inline-block;  
+    border: 1 px;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {  
+    background-color: rgb(235, 200, 137);  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;  
+           }  
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  .common {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+.registerbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+  }  

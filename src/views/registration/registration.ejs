@@ -1,0 +1,75 @@
+<head>
+    <%- include('../homepage'); %>
+
+</head>
+<html>
+<title>Registration</title>
+
+
+<link rel="stylesheet" href="register.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+
+<body>
+
+    <% if(typeof message!=='undefined' ) { %>
+        <div class="alert alert-danger" role="alert">
+            <%= message %>
+        </div>
+        <% } %>
+
+
+            <div class="common">
+                <div class="wrapper">
+
+
+                    <form class="form-signin" name="myform" method="POST" action="/post">
+                        <h3 class="form-signin-heading">Welcome! Please Register</h3>
+
+                        <div class="form-control">
+                            <label>Name </label>
+                            <input type="text" name="name" id="name" size="15" required />
+                            <!-- <span id="name"></span>  -->
+                        </div>
+                        <div class="form-control">
+                            <label> ADRESS: </label>
+                            <input type="text" name="adress" size="15" required />
+                        </div>
+
+
+
+                        <div class="form-control">
+                            <label> EMAIL: </label>
+                            <input type="email" id="email" name="email" required />
+
+                        </div>
+
+                        <div class="form-control">
+                            <label>AGE:</label>
+                            <input type="number" id="number" name="age" required />
+
+                        </div>
+
+                        <div class="form-control">
+                            <label>PASSWORD:</label>
+                            <input type="password" id="password" name="password" required />
+
+                        </div>
+
+
+                        <button type="submit" class="registerbtn"> Submit</button>
+                </div>
+            </div>
+            </form>
+
+
+
+</body>
+
+
+</html>
